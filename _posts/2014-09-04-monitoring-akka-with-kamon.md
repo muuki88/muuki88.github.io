@@ -31,7 +31,7 @@ the _monitoring-storage-gathering-displaying-stuff_.
 
 First of all, when we are done we will have this infrastructure running
 
-[![akka-kamon-flowcharts-single](http://mukis.de/pages/wp-content/uploads/2014/09/akka-kamon-flowcharts-single-1024x401.png)](http://mukis.de/pages/wp-content/uploads/2014/09/akka-kamon-flowcharts-single.png)
+[![akka-kamon-flowcharts-single](/images/posts/akka-kamon-flowcharts-single-1024x401.png)](/images/posts/akka-kamon-flowcharts-single.png)
 
 Thanks to docker we don't have to configure anything on the right hand-side to get started.
 
@@ -197,6 +197,6 @@ docker run -v /etc/localtime:/etc/localtime:ro -p 80:80 -p 8125:8125/udp -p 8126
 Now go to your running Grafana instance at [localhost](http://localhost). You see a default, which we will use to display
 the average time-in-mailbox. Click on the title of the graph ( _First Graph (click title to edit_ ). Now select the metrics like this:
 
-[![akka-kamon-grafana](http://mukis.de/pages/wp-content/uploads/2014/09/akka-kamon-grafana-1024x437.jpg)](http://mukis.de/pages/wp-content/uploads/2014/09/akka-kamon-grafana.jpg)
+[![akka-kamon-grafana](/images/posts/akka-kamon-grafana-1024x437.jpg)](/images/posts/akka-kamon-grafana.jpg)
 
 And that's it!

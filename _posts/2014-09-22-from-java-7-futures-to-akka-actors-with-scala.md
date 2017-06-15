@@ -32,7 +32,7 @@ The application is simple _ItemService _which allows you got get all the _Ite
 * How many items have price price **x**
 
 
-[![Application Flowchart](http://mukis.de/pages/wp-content/uploads/2014/09/java7-scala-futures-flowcharts.png)](http://mukis.de/pages/wp-content/uploads/2014/09/java7-scala-futures-flowcharts.png)
+[![Application Flowchart](/images/posts/java7-scala-futures-flowcharts.png)](/images/posts/java7-scala-futures-flowcharts.png)
 
 The _ItemService_ connects (in theory) to a database, which takes a bit longer to load the data, so we don't get the data sequentially, but concurrently. In the end we gather the results and calculate our statistics.
 

@@ -34,7 +34,7 @@ The code can be found on [Github](https://github.com/muuki88/activator-akka-dock
 
 This is what the running application will look like. No matter where your docker containers will run at the end of the day. The numbers at the top left describe the starting order of the containers.
 
-[![akka-docker-bigpicture](http://mukis.de/pages/wp-content/uploads/2014/08/akka-docker-bigpicture.png)](http://mukis.de/pages/wp-content/uploads/2014/08/akka-docker-bigpicture.png)
+[![akka-docker-bigpicture](/images/posts/akka-docker-bigpicture.png)](/images/posts/akka-docker-bigpicture.png)
 
 First you have to start your seed nodes, which will "glue" the cluster together. After the first node is started all following seed-nodes have to know the ip address of the initial seed node in order to build up a single cluster. The approach describe in this article is very simple, but easily configurable so you can use it with other provision technologies like chef, puppet or zookeeper.
 
