@@ -33,7 +33,15 @@ kramdown:
 highlighter: rouge
 
 destination: _site
-paginate: 10
+paginate: 3
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
 
 author:
   name: Muki
