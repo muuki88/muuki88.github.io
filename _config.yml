@@ -13,46 +13,40 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Muki's Website
+title: Muki
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
+  Hi there :) I'm a developer, musician and "nice-to-have-around" guy.
+  This site contains blog posts written by me and information about me.
+  Don't hesitate to contact.
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://muki.rocks" # the base hostname & protocol for your site, e.g. http://example.com
-logo: me.png
 
-# Left Block Images
-background:
-  homepage: images/home.png                           # this image will be shown on homepage's left block
-  post-list: images/unsplash-image-10.jpg             # this image will be shown on post list page
-  default-post: images/unsplash-gallery-image-3.jpg   # this image will be shown when post's front matter doesn't specify any image
 
 # Jekyll
-permalink:          /:title/
-markdown:           kramdown
-highlighter:        rouge
+permalink:   /:year/:title/
+markdown:    kramdown
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+highlighter: rouge
 
-paginate: 10 # pagination based on number of posts
-paginate_path: "page:num"
-
-rss_path: feed.xml
-categories_path: categories.html
-tags_path: tags.html
-
-# sidebar_background_image: images/home.png
+destination: _site
+paginate: 10
 
 author:
   name: Muki
+  avatar: profile.png
   email: whorocks@muki.rocks
-  github: muuki88
-  twitter: muuki88
-  linkedin: nepomuk-seiler-59564b98
-  bio: It's me. Muki!
-  email_md5: cb0364b3138736a3cb99eea5899935d8
+  github_username: muuki88
+  twitter_username: muuki88
+  linkedin_username: nepomuk-seiler-59564b98
+  # facebook_username:
+
 
 # Google Analytics
-#google-analytics: UA-XXXXX-Y
+google_analytics: UA-27053898-1
 
 # Social Links
 # email:              whorocks@muki.rocks
@@ -71,20 +65,21 @@ timezone: "Europe/Berlin"
 encoding: utf-8
 gems:
   - minima
+  - jemoji
   - jekyll-feed
   - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-redirect-from
   - jekyll-sitemap
-  - pygments.rb
+
+include:
+  - _pages
 exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
   - _site
   - src
-  - vendor
   - CNAME
   - LICENSE
   - Rakefile
-  - .sass-cache
