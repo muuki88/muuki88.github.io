@@ -32,29 +32,33 @@ background:
 permalink:          /:title/
 markdown:           kramdown
 highlighter:        rouge
-kramdown:
-  auto_ids:         true
-  footnote_nr:      1
-  entity_output:    as_char
-  toc_levels:       1..6
-  enable_coderay:   false
 
-sass:
-  sass_dir:         assets/_sass
-  style:            compressed
+paginate: 10 # pagination based on number of posts
+paginate_path: "page:num"
 
-feed:
-  path: /feed.atom
+rss_path: feed.xml
+categories_path: categories.html
+tags_path: tags.html
 
+# sidebar_background_image: images/home.png
+
+author:
+  name: Muki
+  email: whorocks@muki.rocks
+  github: muuki88
+  twitter: muuki88
+  linkedin: nepomuk-seiler-59564b98
+  bio: It's me. Muki!
+  email_md5: cb0364b3138736a3cb99eea5899935d8
 
 # Google Analytics
 #google-analytics: UA-XXXXX-Y
 
 # Social Links
-email:              whorocks@muki.rocks
+# email:              whorocks@muki.rocks
 # google.plus:        nepomuk.seiler
-twitter:            muuki88
-github:             muuki88
+# twitter:            muuki88
+# github:             muuki88
 # stackoverflow:      709351/muki
 # linkedin:           nepomuk-seiler-59564b98
 # xing:               Nepomuk_Seiler
@@ -68,12 +72,11 @@ encoding: utf-8
 gems:
   - minima
   - jekyll-feed
-  - jekyll-gist
+  - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-redirect-from
   - jekyll-sitemap
-include:
-  - _pages
+  - pygments.rb
 exclude:
   - Gemfile
   - Gemfile.lock
