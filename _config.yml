@@ -3,7 +3,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Hi there :) I'm a developer, musician and "nice-to-have-around" guy.
   This site contains blog posts written by me and information about me.
   Don't hesitate to contact.
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://muki.rocks" # the base hostname & protocol for your site, e.g. http://example.com
 
 
@@ -18,7 +18,7 @@ kramdown:
 highlighter: rouge
 
 destination: _site
-paginate: 3
+show_excerpts: true
 
 defaults:
   -
@@ -28,22 +28,13 @@ defaults:
     values:
         layout: 'post'
 
-author:
-  name: Muki
-  avatar: profile.png
-  email: whorocks@muki.rocks
-  github_username: muuki88
-  twitter_username: muuki88
-  linkedin_username: nepomuk-seiler-59564b98
-  # facebook_username:
-
 
 # Build settings
-theme: minima
+remote_theme: samarsault/plainwhite-jekyll
 timezone: "Europe/Berlin"
 encoding: utf-8
-gems:
-  - minima
+plugins:
+  - plainwhite
   - jemoji
   - jekyll-feed
   - jekyll-paginate
@@ -60,3 +51,23 @@ exclude:
   - _site
   - CNAME
   - LICENSE
+  - .jekyll-cache
+
+plainwhite:
+  name: Muki Seiler
+  tagline: Software Engineer
+  portfolio_image: images/profile.png
+  date_format: "%b %-d, %Y"
+
+  social_links:
+    twitter: muuki88
+    github: muuki88
+    linkedIn: in/nepomuk-seiler-59564b98 # format: locale/username
+
+  sitemap: true
+  
+  dark_mode: true
+
+  navigation:
+    - title: Impressum
+      url: "/impressum"

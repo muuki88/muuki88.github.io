@@ -5,7 +5,6 @@ date: 2015-02-15 12:50:52
 excerpt: continous testing on windows with appveyor
 categories: [sbt]
 tags: [sbt, continous-integration, travis-ci, windows, appveyor]
-# excerpt: 'This is the excerpt'
 ---
 
 For SBT Native Packager we rely on [travis-ci][travis-ci] to run our tests. However travis has not yet windows support,
