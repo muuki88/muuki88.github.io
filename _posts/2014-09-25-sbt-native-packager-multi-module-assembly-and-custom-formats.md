@@ -3,9 +3,6 @@ date: 2014-09-25 17:52:29+00:00
 title: SBT native packager multi-module-build, assembly and custom formats
 excerpt: Some links around common questions regarding sbt-native-packager
 categories:
-- Allgemein
-- Tutorials
-tags:
 - debian
 - playframework
 - rpm

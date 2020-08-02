@@ -2,8 +2,6 @@
 date: 2012-07-27 10:04:31+00:00
 title: DevVM Part 1 - Gerrit on Ubuntu 12.04 Server
 categories:
-- Tutorials
-tags:
 - gerrit
 - ubuntu
 ---

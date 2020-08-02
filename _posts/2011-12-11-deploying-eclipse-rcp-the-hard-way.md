@@ -2,9 +2,7 @@
 date: 2011-12-11 22:09:04+00:00
 layout: post
 title: Deploying Eclipse RCP - The hard way
-categories:
-- Projekte
-- Thoughts
+categories: [thoughts]
 ---
 
 Today I had the most painful PDE headless build ever. This post just describes what I had to do to deploy an

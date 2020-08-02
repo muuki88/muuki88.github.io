@@ -2,8 +2,6 @@
 date: 2012-05-03 12:58:42+00:00
 title: Software Development at Universities
 categories:
-- Thoughts
-tags:
 - code
 - software
 - university

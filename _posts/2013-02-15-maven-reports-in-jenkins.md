@@ -4,8 +4,6 @@ layout: post
 title: Maven Reports in Jenkins
 wordpress_id: 332
 categories:
-- Allgemein
-tags:
 - build
 - checkstyle
 - cobertura

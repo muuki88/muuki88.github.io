@@ -3,8 +3,6 @@ date: 2014-08-19 21:00:36+00:00
 layout: post
 title: Akka cluster with docker containers
 categories:
-- Allgemein
-tags:
 - Akka
 - docker
 - sbt

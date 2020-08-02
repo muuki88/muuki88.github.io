@@ -3,9 +3,6 @@ date: 2014-08-11 17:40:07+00:00
 layout: post
 title: Why you should code open source
 categories:
-- Allgemein
-- Thoughts
-tags:
 - benefits
 - open developement
 - opensource

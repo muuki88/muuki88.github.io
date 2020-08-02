@@ -4,16 +4,13 @@ layout: post
 title: Simple JUnit Tests with Tycho and Surefire
 excerpt: How to configure tycho and sure-fire
 categories:
-- Allgemein
-- News
-tags:
-- Bundle
-- Eclipse
-- JUnit
+- bundle
+- eclipse
+- junit
 - maven
-- Plugin
-- Surefire
-- Test
+- plugin
+- surefire
+- test
 - tycho
 ---
 

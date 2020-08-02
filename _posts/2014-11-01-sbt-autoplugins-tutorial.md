@@ -2,8 +2,7 @@
 layout: post
 title: "SBT AutoPlugins Tutorial"
 date: 2014-11-01 14:12:48
-categories: [sbt]
-tags: [sbt, autoplugins]
+categories: [sbt, autoplugins]
 ---
 
 This tutorial will guide you through the process of writing your own sbt plugin. There are several reasons to do this

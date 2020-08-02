@@ -2,8 +2,6 @@
 date: 2014-09-04 15:49:31+00:00
 title: Monitoring Akka with Kamon
 categories:
-- Allgemein
-tags:
 - Akka
 - docker
 - kamon

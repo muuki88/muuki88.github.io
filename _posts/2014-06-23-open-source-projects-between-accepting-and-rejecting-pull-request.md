@@ -3,8 +3,6 @@ date: 2014-06-23 21:23:04+00:00
 title: Open Source Projects - Between accepting and rejecting pull request
 excerpt: Being a commiter comes with a lot of responsibilities. You are responsible for the code quality, supporting your community, encouraging people to contribute to your project and of course providing an awesome open source product
 categories:
-- Thoughts
-tags:
 - open source
 - oss
 ---

@@ -4,8 +4,6 @@ layout: post
 title: Leistungsschutzrecht - Phantasien
 excerpt: Das Leistungsschutzrecht hat vorerst den Bundestag passiert. Wenn auch die aktuelle Version zu Gunsten der Internetgemeinde abgeschwächt wurde, bleibt das ganze Vorhaben immer noch mehr als fraglich. Mögliche Folgen, wahrscheinlich wie unwahrscheinlich möchte ich deshalb darstellen.
 categories:
-- Thoughts
-tags:
 - Leistungsschutzrecht
 - lsr
 ---

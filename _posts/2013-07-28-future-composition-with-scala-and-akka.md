@@ -3,8 +3,6 @@ date: 2013-07-28 21:17:32+00:00
 title: Future Composition with Scala and Akka
 excerpt: Scala is functional and object-oriented language, which runs on the JVM. For concurrent and/or parallel programming it is a suitable choice along with the Akka framework, which provides a rich toolset for all kind of concurrent tasks. In this post I want to show a little example how to schedule a logfile-search job on multiple files/servers with Fitires amd Actors.
 categories:
-- Allgemein
-tags:
 - Actor
 - Akka
 - Concurrent

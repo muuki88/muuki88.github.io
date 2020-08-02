@@ -4,8 +4,6 @@ layout: post
 title: How to add a maven-plugin jar as dependency to sbt
 excerpt: How to add maven plugins as sbt dependencies
 categories:
-- Tutorials
-tags:
 - maven-plugin
 - sbt
 - scala

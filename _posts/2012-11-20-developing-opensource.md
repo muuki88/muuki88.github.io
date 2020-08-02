@@ -2,8 +2,6 @@
 date: 2012-11-20 22:08:52+00:00
 title: Developing OpenSource
 categories:
-- Allgemein
-tags:
 - opensource
 ---
 

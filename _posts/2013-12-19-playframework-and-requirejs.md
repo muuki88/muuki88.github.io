@@ -4,8 +4,6 @@ layout: post
 title: Playframework and RequireJS
 excerpt: How to integrate play and requirejs
 categories:
-- Tutorials
-tags:
 - javascript
 - playframework
 - requirejs

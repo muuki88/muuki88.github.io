@@ -2,9 +2,7 @@
 date: 2014-09-22 18:17:17+00:00
 layout: post
 title: From Java 7 Futures to Akka actors with Scala
-categories:
-- Allgemein
-- Tutorials
+categories: [scala, java, futures]
 ---
 
 This blog post will show you how a step by step transition from a "_java 7 and j.u.c.Future_" based implementation to an "_akka actor written in scala solution_" looks like. It will take four steps, which are

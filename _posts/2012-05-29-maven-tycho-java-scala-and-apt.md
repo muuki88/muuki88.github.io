@@ -2,11 +2,9 @@
 date: 2012-05-29 10:13:58+00:00
 title: Maven - Tycho, Java, Scala and APT
 categories:
-- Tutorials
-tags:
 - build
-- Eclipse
-- Java
+- eclipse
+- java
 - m2e
 - maven
 - maven3

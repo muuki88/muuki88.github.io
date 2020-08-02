@@ -4,8 +4,6 @@ layout: post
 title: MySql Timezones in the Cloud
 excerpt: On a small university project I found my self developing a web application with the playframework, mysql and some javascript libraries. After testing and developing on my local machine I want to deploy my application. Running this application on Openshift created some unexpected results.
 categories:
-- Allgemein
-tags:
 - cloud
 - mysql
 - timezones

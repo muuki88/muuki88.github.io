@@ -2,9 +2,7 @@
 date: 2012-09-19 12:52:36+00:00
 title: Gradient Decent with Scala
 excerpt: How to implement a simple gradient decent in scala
-categories:
-- Allgemein
-- Tutorials
+categories: [scala, statistics, machine learning]
 ---
 
 Currently I'm watching a [Scala](http://www.scala-lang.org/) and a
