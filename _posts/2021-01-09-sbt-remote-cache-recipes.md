@@ -88,12 +88,11 @@ ThisBuild / pushRemoteCacheTo := Some("Nexus OSS 3 Remote Cache" at "http://loca
 or a static go binary and provides a nice web UI.
 
 The catch is that this system can only be used internally as public access to the storage bucket is required
-if you want don't want to configure anything else in SBT. IMHO this is a reasonable thing to start a single
-minio instance internally only for your build cache artifacts.
-
+if you don't want to configure anything else in SBT. IMHO this isn't a big blocker as an interal build cache
+system doesn't need to be publicy available.
 ## Setup a test minio instance
 
-Start a minio server as described [in the mino docs](https://min.io/download).
+Start a minio server as described [in the minio docs](https://min.io/download).
 I changed the data dir to `/tmp/minio-data` for testing purposes.
 
 
@@ -111,7 +110,7 @@ After that configure an alias for the local minio instance.
 ```bash
 # set an alias 'minio' for your local minio installation
 $ mc alias set minio http://localhost:9000 minioadmin minioadmin
-.$ mc policy set public minio/sbt-build-cache/
+$ mc policy set public minio/sbt-build-cache/
 ```
 
 ## Configuring SBT
@@ -127,9 +126,9 @@ Credentials are `minioadmin` / `minioadmin`.
 
 I haven't tried this out, but the idea is to
 
-- Create a local build cache in each jenkins job, e.g. in `file("./.build-cache")`
-- Record the cache artifacts with the [jenkins `archiveArtifacts` directive](https://www.jenkins.io/doc/pipeline/tour/tests-and-artifacts/)
-- Use the _latestSucessfullBuild_ URL as an additional resolver, e.g.
+- create a local build cache in each jenkins job, e.g. in `file("./.build-cache")`
+- record the cache artifacts with the [jenkins `archiveArtifacts` directive](https://www.jenkins.io/doc/pipeline/tour/tests-and-artifacts/)
+- use the _latestSucessfullBuild_ URL as an additional resolver, e.g.
   ```scala
   remoteCacheResolvers += "Jenkins Build Cache".at("https://jenkins.your-company.com/job/my-application/lastSuccessfulBuild")
   ```
@@ -137,10 +136,12 @@ I haven't tried this out, but the idea is to
 # Why do we want to use this?
 
 In our continous deployment pipeline we start up a canary instance of a microservice before deploying it to production.
-After the successful deployment we run a bunch of integration test against the internal APIs of this service. If these
+After the successful canary deployment we run a bunch of integration test against the internal APIs of this service. If these
 pass, we run all the integration tests of services that depend on this service against the canary instance. We call these
 the _regression tests_. 
 
 We run these regression tests by checking out the latest successful commit of the service that depends on the service
 that should be deployed and run `sbt IntergrationTest / test`. This needs to compile almost the complete application.
 With the help of a build cache this can run the test almost immediately!
+
+Thanks to all the SBT folks who made this happen 💖💖
