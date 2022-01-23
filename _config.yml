@@ -52,6 +52,7 @@ exclude:
   - CNAME
   - LICENSE
   - .jekyll-cache
+  - vendor
 
 plainwhite:
   name: Muki Seiler
